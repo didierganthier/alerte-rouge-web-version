@@ -73,7 +73,7 @@ export function ContactComponent() {
             </div>
           </div>
         </section>
-        <section className="py-20 bg-muted">
+        {/* <section className="py-20 bg-muted">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold text-center">Find Us</h2>
             <div className="mt-8">
@@ -82,7 +82,7 @@ export function ContactComponent() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </main>
       <footer className="bg-background py-6 border-t">
         <div className="container mx-auto flex items-center justify-between px-4">
