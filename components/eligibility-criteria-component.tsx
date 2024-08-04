@@ -6,6 +6,7 @@ import { Card, CardHeader, CardContent, CardFooter } from "@/components/ui/card"
 import Navbar from "./shared/Navbar"
 import { ChevronDown, ChevronUp } from 'lucide-react'
 import Hero from './shared/Hero';
+import LayoutComponent from './shared/LayoutComponent';
 
 export function EligibilityCriteriaComponent() {
   const [openFAQ, setOpenFAQ] = useState<number>(50);
@@ -34,9 +35,7 @@ export function EligibilityCriteriaComponent() {
   ];
 
   return (
-    <div className="flex flex-col min-h-dvh">
-      <Navbar />
-      <Hero imageUrl="https://scontent-sof1-1.xx.fbcdn.net/v/t39.30808-6/448361251_18027536972504500_6161641216015918584_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeExlLeBSVUmiWltrgF5tkBi-wcQ1iIMmPT7BxDWIgyY9HJcHs69i4s0pXnEqcrPbzsOfPx-1yUZfduwibVb78Yp&_nc_ohc=ZAcNPX4_o5AQ7kNvgEkLKTj&_nc_ht=scontent-sof1-1.xx&oh=00_AYD3vEOr0Cf_nnzRmnyq6rg7pUkyDJ5IecljgUP9b6ApMQ&oe=66B2C431" />
+    <LayoutComponent hero imageUrl="https://scontent-sof1-1.xx.fbcdn.net/v/t39.30808-6/448361251_18027536972504500_6161641216015918584_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeExlLeBSVUmiWltrgF5tkBi-wcQ1iIMmPT7BxDWIgyY9HJcHs69i4s0pXnEqcrPbzsOfPx-1yUZfduwibVb78Yp&_nc_ohc=ZAcNPX4_o5AQ7kNvgEkLKTj&_nc_ht=scontent-sof1-1.xx&oh=00_AYD3vEOr0Cf_nnzRmnyq6rg7pUkyDJ5IecljgUP9b6ApMQ&oe=66B2C431">
       <main className="flex-1 flex justify-center items-center">
         <section className="py-20 bg-background w-full max-w-7xl">
           <div className="container">
@@ -134,22 +133,6 @@ export function EligibilityCriteriaComponent() {
           </div>
         </section>
       </main>
-      <footer className="bg-background py-6 border-t">
-        <div className="container flex items-center justify-between">
-          <p className="text-sm text-muted-foreground">&copy; 2024 Blood Donation Center. All rights reserved.</p>
-          <nav className="flex items-center gap-4">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Contact Us
-            </Link>
-          </nav>
-        </div>
-      </footer>
-    </div>
+    </LayoutComponent>
   )
 }
