@@ -7,11 +7,11 @@ import Navbar from "./shared/Navbar"
 import MailIcon from "./shared/icons/MailIcon"
 import PhoneIcon from "./shared/icons/PhoneIcon"
 import LocateIcon from "./shared/icons/LocateIcon"
+import LayoutComponent from "./shared/LayoutComponent"
 
 export function ContactComponent() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Navbar />
+    <LayoutComponent>
       <main className="flex-1 container mx-auto px-4">
         <section className="py-20 bg-background">
           <div className="container mx-auto px-4">
@@ -84,22 +84,6 @@ export function ContactComponent() {
           </div>
         </section> */}
       </main>
-      <footer className="bg-background py-6 border-t">
-        <div className="container mx-auto flex items-center justify-between px-4">
-          <p className="text-sm text-muted-foreground">&copy; 2024 Blood Donation Center. All rights reserved.</p>
-          <nav className="flex items-center gap-4">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Contact Us
-            </Link>
-          </nav>
-        </div>
-      </footer>
-    </div>
+    </LayoutComponent>
   )
 }
