@@ -3,9 +3,9 @@ import Navbar from './Navbar'
 import FooterComponent from './Footer'
 import Hero from './Hero'
 
-const LayoutComponent = ({children, imageUrl, hero = false}: any) => {
+const LayoutComponent = ({children, imageUrl, hero = false, dvh=false}: any) => {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className={`flex flex-col ${dvh? "min-h-screen" : "min-h-dvh"}`}>
         <Navbar />
         {hero && <Hero imageUrl={imageUrl} />}
         {children}

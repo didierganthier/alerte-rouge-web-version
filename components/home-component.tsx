@@ -7,11 +7,11 @@ import CheckIcon from "./shared/icons/CheckIcon"
 import TwitterIcon from "./shared/icons/TwitterIcon"
 import FacebookIcon from "./shared/icons/FacebookIcon"
 import InstagramIcon from "./shared/icons/InstagramIcon"
+import LayoutComponent from "./shared/LayoutComponent"
 
 export function HomeComponent() {
   return (
-    <div className="flex flex-col min-h-screen">
-      <Hero imageUrl="https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/448140749_18232478911281941_8375942470380795020_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGMPvkCG_hzy82l-Cam2l4S23ZSChHX_svbdlIKEdf-y_Sbc6AYbqLRKeLHhKkdOom40P1VT6WTw6DPfSGalctu&_nc_ohc=JE9Ps5eRkacQ7kNvgHAvO0B&_nc_ht=scontent-sof1-2.xx&oh=00_AYA8Y2ojqFEjZLredkPmzZFQXc4E5NT8324lN-q4xlC80A&oe=66B28089" />
+    <LayoutComponent hero imageUrl="https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/448140749_18232478911281941_8375942470380795020_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGMPvkCG_hzy82l-Cam2l4S23ZSChHX_svbdlIKEdf-y_Sbc6AYbqLRKeLHhKkdOom40P1VT6WTw6DPfSGalctu&_nc_ohc=JE9Ps5eRkacQ7kNvgHAvO0B&_nc_ht=scontent-sof1-2.xx&oh=00_AYA8Y2ojqFEjZLredkPmzZFQXc4E5NT8324lN-q4xlC80A&oe=66B28089">
       <section className="py-20 bg-background">
         <div className="container mx-auto grid gap-12 md:grid-cols-2 text-center md:text-left">
           <div className="space-y-4">
@@ -168,22 +168,6 @@ export function HomeComponent() {
           </div>
         </div>
       </section>
-      <footer className="bg-background py-6 border-t">
-        <div className="container flex items-center justify-between">
-          <p className="text-sm text-muted-foreground">&copy; 2024 Blood Donation Center. All rights reserved.</p>
-          <nav className="flex items-center gap-4">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Contact Us
-            </Link>
-          </nav>
-        </div>
-      </footer>
-    </div>
+    </LayoutComponent>
   )
 }

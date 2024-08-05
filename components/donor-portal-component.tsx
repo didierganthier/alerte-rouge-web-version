@@ -9,11 +9,11 @@ import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@
 import { Table, TableHeader, TableRow, TableHead, TableBody, TableCell } from "@/components/ui/table"
 import { Switch } from "@/components/ui/switch"
 import Navbar from "./shared/Navbar"
+import LayoutComponent from "./shared/LayoutComponent"
 
 export function DonorPortalComponent() {
   return (
-    <div className="flex flex-col min-h-dvh">
-      <Navbar />
+    <LayoutComponent dvh>
       <main className="flex-1 flex justify-center items-center">
         <section className="py-20 bg-background w-full max-w-4xl">
           <div className="container">
@@ -156,22 +156,6 @@ export function DonorPortalComponent() {
           </div>
         </section>
       </main>
-      <footer className="bg-background py-6 border-t">
-        <div className="container flex items-center justify-between">
-          <p className="text-sm text-muted-foreground">&copy; 2024 Blood Donation Center. All rights reserved.</p>
-          <nav className="flex items-center gap-4">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Contact Us
-            </Link>
-          </nav>
-        </div>
-      </footer>
-    </div>
+    </LayoutComponent>
   )
 }

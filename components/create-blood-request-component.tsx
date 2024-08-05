@@ -8,6 +8,7 @@ import { Textarea } from "@/components/ui/textarea"
 import { Checkbox } from "@/components/ui/checkbox"
 import Navbar from "./shared/Navbar"
 import FlowbiteRadioItem from "./shared/FlowbiteRadioItem"
+import LayoutComponent from "./shared/LayoutComponent"
 
 export function CreateBloodRequestComponent() {
 
@@ -23,8 +24,7 @@ export function CreateBloodRequestComponent() {
   ]
 
   return (
-    <div className="flex flex-col min-h-dvh">
-      <Navbar />
+    <LayoutComponent dvh>
       <main className="flex-1">
         <section className="py-20 bg-background px-4 md:px-6">
           <div className="container">
@@ -113,22 +113,6 @@ export function CreateBloodRequestComponent() {
           </div>
         </section>
       </main>
-      <footer className="bg-background py-6 border-t">
-        <div className="container flex items-center justify-between">
-          <p className="text-sm text-muted-foreground">&copy; 2024 Blood Donation Center. All rights reserved.</p>
-          <nav className="flex items-center gap-4">
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-sm text-muted-foreground hover:text-primary" prefetch={false}>
-              Contact Us
-            </Link>
-          </nav>
-        </div>
-      </footer>
-    </div>
+    </LayoutComponent>
   )
 }
