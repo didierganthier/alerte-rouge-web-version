@@ -19,13 +19,13 @@ export default function RootLayout({
       <head>
         <meta property="og:title" content="Alerte Rouge" />
         <meta property="og:description" content="Gout San Sove Lavi. Pri Yon Pochèt San se Lanmou." />
-        <meta property="og:image" content="hero3.jpg" />
+        <meta property="og:image" content="hero1.jpg" />
         <meta property="og:url" content="https://alerterouge.vercel.app/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Atalou Microsystem" />
+        <meta name="twitter:title" content="Alerte Rouge" />
         <meta name="twitter:description" content="Gout San Sove Lavi. Pri Yon Pochèt San se Lanmou." />
-        <meta name="twitter:image" content="hero3.jpg" />
+        <meta name="twitter:image" content="hero1.jpg" />
       </head>
       <body className={inter.className}>{children}</body>
     </html>
