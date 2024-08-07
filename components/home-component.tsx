@@ -11,7 +11,7 @@ import LayoutComponent from "./shared/LayoutComponent"
 
 export function HomeComponent() {
   return (
-    <LayoutComponent hero imageUrl="https://scontent-sof1-2.xx.fbcdn.net/v/t39.30808-6/448140749_18232478911281941_8375942470380795020_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGMPvkCG_hzy82l-Cam2l4S23ZSChHX_svbdlIKEdf-y_Sbc6AYbqLRKeLHhKkdOom40P1VT6WTw6DPfSGalctu&_nc_ohc=JE9Ps5eRkacQ7kNvgHAvO0B&_nc_ht=scontent-sof1-2.xx&oh=00_AYA8Y2ojqFEjZLredkPmzZFQXc4E5NT8324lN-q4xlC80A&oe=66B28089">
+    <LayoutComponent hero imageUrl="hero3.jpg">
       <section className="py-20 bg-background">
         <div className="container mx-auto grid gap-12 md:grid-cols-2 text-center md:text-left">
           <div className="space-y-4">

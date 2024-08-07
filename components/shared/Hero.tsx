@@ -16,13 +16,13 @@ const Hero = ({imageUrl}: any) => {
                 <p className="text-xl mt-4">
                     Bay san pou sove lavi. Fè yon don kounye a pou ede moun ki nan bezwen.
                 </p>
-                <Link
+                {/* <Link
                     href="#"
                     className="inline-flex h-12 items-center justify-center rounded-md px-8 text-sm font-medium bg-[#ff0000] hover:bg-[#ffffff] hover:text-[#ff0000] shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 mt-6"
                     prefetch={false}
                 >
                     Donate Now
-                </Link>
+                </Link> */}
             </div>
         </section>
     )
