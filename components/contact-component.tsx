@@ -1,9 +1,7 @@
-import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
-import Navbar from "./shared/Navbar"
 import MailIcon from "./shared/icons/MailIcon"
 import PhoneIcon from "./shared/icons/PhoneIcon"
 import LocateIcon from "./shared/icons/LocateIcon"
@@ -12,8 +10,8 @@ import LayoutComponent from "./shared/LayoutComponent"
 export function ContactComponent() {
   return (
     <LayoutComponent>
-      <main className="flex-1 container mx-auto px-4">
-        <section className="py-20 bg-background">
+      <main className="flex-1 container mx-auto px-4 bg-muted">
+        <section className="py-20 bg-muted">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-8">
               <div>
